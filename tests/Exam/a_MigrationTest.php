@@ -51,6 +51,7 @@ class a_MigrationTest extends TestCase
                 'user_id',
                 'log',
                 'day',
+                'deleted_at',
                 'created_at',
                 'updated_at',
             ])

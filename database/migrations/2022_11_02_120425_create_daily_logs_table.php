@@ -18,6 +18,7 @@ return new class extends Migration
             $table->foreignId('user_id')->index();
             $table->string('log');
             $table->date('day');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

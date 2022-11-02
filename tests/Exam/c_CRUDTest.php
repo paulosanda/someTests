@@ -44,7 +44,7 @@ class c_CRUDTest extends TestCase
         $this->assertDatabaseHas('daily_logs', [
             'user_id' => $user->id,
             'log'     => 'Logging from create route test',
-            'day'     => '2020-01-01 00:00:00',
+            'day'     => '2020-01-01',
         ]);
     }
 
@@ -83,11 +83,13 @@ class c_CRUDTest extends TestCase
     public function implement_route_model_binding()
     {
         $user     = \App\Models\User::factory()->create();
-        $dailyLog = \App\Models\DailyLog::factory()->create();
+        $dailyLog = \App\Models\DailyLog::factory()->create([
+            'user_id' => $user->id
+        ]);
 
         $this->actingAs($user);
 
-        $this->put(route('daily-logs.update', $dailyLog), [
+        $this->put(route('daily-logs.update', $dailyLog->id), [
             'log' => 'Updating the text',
         ]);
 
