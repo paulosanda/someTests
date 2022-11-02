@@ -133,7 +133,7 @@ class b_ModelTest extends TestCase
         $dailyLog = \App\Models\DailyLog::factory()->make([
             'day' => '2020-02-02',
         ]);
-
+        // dd($dailyLog->day);
         $this->assertEquals(Carbon::class, get_class($dailyLog->day));
     }
 

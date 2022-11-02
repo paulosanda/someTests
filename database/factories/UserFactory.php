@@ -39,4 +39,9 @@ class UserFactory extends Factory
             ];
         });
     }
+
+    public function setPasswordAttribute(string $input): void
+    {
+        $this->atributes['password'] = Hash::make($input);
+    }
 }
