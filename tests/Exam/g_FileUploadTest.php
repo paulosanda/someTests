@@ -34,13 +34,11 @@ class g_FileUploadTest extends TestCase
         $user = \App\Models\User::factory()->create([
             'avatar' => null,
         ]);
-
         $this->actingAs($user)
             ->put(route('profile.update-avatar'), [
                 'avatar' => UploadedFile::fake()->image('my-avatar.jpg'),
+                'teste' => 'teste deu certo'
             ]);
-
-        $user->refresh();
 
         $this->assertDatabaseMissing('users', [
             'id'     => $user->id,

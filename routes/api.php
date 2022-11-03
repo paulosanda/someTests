@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DailyLogsController;
+use App\Http\Controllers\ProfileController;
 
 
 /*
@@ -34,3 +35,6 @@ Route::put('daily-logs-update/{id}', [DailyLogsController::class, 'update'])->na
 
 Route::delete('daily-logs-delete/{id}', [DailyLogsController::class, 'destroy'])
     ->name('daily-logs.delete');
+
+Route::put('profile-update-avatar', [ProfileController::class, 'update'])
+    ->name('profile.update-avatar');

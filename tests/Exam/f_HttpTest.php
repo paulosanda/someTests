@@ -41,7 +41,7 @@ class f_HttpTest extends TestCase
      */
     public function consume_an_api()
     {
-        $data = \App\Actions\Exam\ConsumeAPI::execute();
+        $data = app(\App\Actions\Exam\ConsumeAPI::class)->execute();
 
         $this->assertEquals(
             [

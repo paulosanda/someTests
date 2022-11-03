@@ -1,293 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="58" assertions="34" errors="35" warnings="0" failures="3" skipped="0" time="0.964966">
-    <testsuite name="Exam" tests="58" assertions="34" errors="35" warnings="0" failures="3" skipped="0" time="0.964966">
-      <testsuite name="Tests\Exam\a_MigrationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/a_MigrationTest.php" tests="3" assertions="3" errors="0" warnings="0" failures="0" skipped="0" time="0.120356">
-        <testcase name="create_daily_logs_table" class="Tests\Exam\a_MigrationTest" classname="Tests.Exam.a_MigrationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/a_MigrationTest.php" line="29" assertions="1" time="0.091238"/>
-        <testcase name="create_columns" class="Tests\Exam\a_MigrationTest" classname="Tests.Exam.a_MigrationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/a_MigrationTest.php" line="46" assertions="1" time="0.015457"/>
-        <testcase name="create_foreign_key_and_index" class="Tests\Exam\a_MigrationTest" classname="Tests.Exam.a_MigrationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/a_MigrationTest.php" line="67" assertions="1" time="0.013661"/>
-      </testsuite>
-      <testsuite name="Tests\Exam\b_ModelTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/b_ModelTest.php" tests="8" assertions="9" errors="0" warnings="0" failures="1" skipped="0" time="0.100354">
-        <testcase name="create_a_model" class="Tests\Exam\b_ModelTest" classname="Tests.Exam.b_ModelTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/b_ModelTest.php" line="37" assertions="1" time="0.009753"/>
-        <testcase name="relationship_with_the_user" class="Tests\Exam\b_ModelTest" classname="Tests.Exam.b_ModelTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/b_ModelTest.php" line="47" assertions="2" time="0.014849"/>
-        <testcase name="create_factories" class="Tests\Exam\b_ModelTest" classname="Tests.Exam.b_ModelTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/b_ModelTest.php" line="65" assertions="1" time="0.019237"/>
-        <testcase name="implement_query_scope" class="Tests\Exam\b_ModelTest" classname="Tests.Exam.b_ModelTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/b_ModelTest.php" line="78" assertions="1" time="0.012249"/>
-        <testcase name="use_get_mutator" class="Tests\Exam\b_ModelTest" classname="Tests.Exam.b_ModelTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/b_ModelTest.php" line="101" assertions="1" time="0.010347"/>
-        <testcase name="use_set_mutator" class="Tests\Exam\b_ModelTest" classname="Tests.Exam.b_ModelTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/b_ModelTest.php" line="116" assertions="1" time="0.012607"/>
-        <testcase name="date_should_be_a_carbon_instance" class="Tests\Exam\b_ModelTest" classname="Tests.Exam.b_ModelTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/b_ModelTest.php" line="131" assertions="1" time="0.008886"/>
-        <testcase name="the_user_should_be_notified_after_a_password_change" class="Tests\Exam\b_ModelTest" classname="Tests.Exam.b_ModelTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/b_ModelTest.php" line="146" assertions="1" time="0.012426">
-          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Exam\b_ModelTest::the_user_should_be_notified_after_a_password_change
-The expected [App\Notifications\PasswordChanged] notification was not sent.
-  Failed asserting that false is true.
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/NotificationFake.php:83
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:337
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/b_ModelTest.php:155</failure>
-        </testcase>
-      </testsuite>
-      <testsuite name="Tests\Exam\c_CRUDTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/c_CRUDTest.php" tests="9" assertions="15" errors="0" warnings="0" failures="0" skipped="0" time="0.205568">
-        <testcase name="create_route" class="Tests\Exam\c_CRUDTest" classname="Tests.Exam.c_CRUDTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/c_CRUDTest.php" line="34" assertions="1" time="0.078886"/>
-        <testcase name="validate_the_payload" class="Tests\Exam\c_CRUDTest" classname="Tests.Exam.c_CRUDTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/c_CRUDTest.php" line="58" assertions="5" time="0.025549"/>
-        <testcase name="implement_route_model_binding" class="Tests\Exam\c_CRUDTest" classname="Tests.Exam.c_CRUDTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/c_CRUDTest.php" line="83" assertions="1" time="0.018808"/>
-        <testcase name="use_policy_to_authorize_deletion" class="Tests\Exam\c_CRUDTest" classname="Tests.Exam.c_CRUDTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/c_CRUDTest.php" line="108" assertions="1" time="0.014333"/>
-        <testcase name="apply_soft_delete" class="Tests\Exam\c_CRUDTest" classname="Tests.Exam.c_CRUDTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/c_CRUDTest.php" line="129" assertions="1" time="0.018098"/>
-        <testcase name="custom_rule" class="Tests\Exam\c_CRUDTest" classname="Tests.Exam.c_CRUDTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/c_CRUDTest.php" line="149" assertions="3" time="0.012439"/>
-        <testcase name="use_middleware_to_block_access" class="Tests\Exam\c_CRUDTest" classname="Tests.Exam.c_CRUDTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/c_CRUDTest.php" line="171" assertions="1" time="0.012196"/>
-        <testcase name="dispatch_an_event" class="Tests\Exam\c_CRUDTest" classname="Tests.Exam.c_CRUDTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/c_CRUDTest.php" line="189" assertions="1" time="0.012750"/>
-        <testcase name="create_a_listener_that_will_send_an_email_with_a_copy_of_daily_log" class="Tests\Exam\c_CRUDTest" classname="Tests.Exam.c_CRUDTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/c_CRUDTest.php" line="211" assertions="1" time="0.012507"/>
-      </testsuite>
-      <testsuite name="Tests\Exam\d_PackageInstallationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/d_PackageInstallationTest.php" tests="2" assertions="1" errors="1" warnings="0" failures="0" skipped="0" time="0.135959">
-        <testcase name="install_a_package" class="Tests\Exam\d_PackageInstallationTest" classname="Tests.Exam.d_PackageInstallationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/d_PackageInstallationTest.php" line="28" assertions="1" time="0.124485"/>
-        <testcase name="setup_package" class="Tests\Exam\d_PackageInstallationTest" classname="Tests.Exam.d_PackageInstallationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/d_PackageInstallationTest.php" line="46" assertions="0" time="0.011474">
-          <error type="PHPUnit\Framework\InvalidArgumentException">Tests\Exam\d_PackageInstallationTest::setup_package
-PHPUnit\Framework\InvalidArgumentException: Argument #2 of PHPUnit\Framework\Assert::assertCount() must be a countable or iterable
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/d_PackageInstallationTest.php:54</error>
-        </testcase>
-      </testsuite>
-      <testsuite name="Tests\Exam\e_JobTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/e_JobTest.php" tests="3" assertions="1" errors="3" warnings="0" failures="0" skipped="0" time="0.055693">
-        <testcase name="create_job" class="Tests\Exam\e_JobTest" classname="Tests.Exam.e_JobTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/e_JobTest.php" line="34" assertions="0" time="0.017754">
-          <error type="Error">Tests\Exam\e_JobTest::create_job
-Error: Class "App\Jobs\SaveRandomQuote" not found
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/e_JobTest.php:42</error>
-        </testcase>
-        <testcase name="make_sure_that_the_job_worked" class="Tests\Exam\e_JobTest" classname="Tests.Exam.e_JobTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/e_JobTest.php" line="52" assertions="0" time="0.022338">
-          <error type="Error">Tests\Exam\e_JobTest::make_sure_that_the_job_worked
-Error: Class "App\Jobs\SaveRandomQuote" not found
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/e_JobTest.php:70</error>
-        </testcase>
-        <testcase name="add_logs_to_the_job_so_we_can_debug_later" class="Tests\Exam\e_JobTest" classname="Tests.Exam.e_JobTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/e_JobTest.php" line="84" assertions="1" time="0.015602">
-          <error type="Error">Tests\Exam\e_JobTest::add_logs_to_the_job_so_we_can_debug_later
-Error: Class "App\Jobs\SaveRandomQuote" not found
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/e_JobTest.php:105</error>
-        </testcase>
-      </testsuite>
-      <testsuite name="Tests\Exam\f_HttpTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/f_HttpTest.php" tests="2" assertions="1" errors="1" warnings="0" failures="1" skipped="0" time="0.007561">
-        <testcase name="consume_an_api" class="Tests\Exam\f_HttpTest" classname="Tests.Exam.f_HttpTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/f_HttpTest.php" line="42" assertions="0" time="0.003931">
-          <error type="Error">Tests\Exam\f_HttpTest::consume_an_api
-Error: Class "App\Actions\Exam\ConsumeAPI" not found
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/f_HttpTest.php:44</error>
-        </testcase>
-        <testcase name="use_config_to_organize_your_service" class="Tests\Exam\f_HttpTest" classname="Tests.Exam.f_HttpTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/f_HttpTest.php" line="62" assertions="1" time="0.003630">
-          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Exam\f_HttpTest::use_config_to_organize_your_service
-Failed asserting that an array has the key 'exam'.
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/f_HttpTest.php:64</failure>
-        </testcase>
-      </testsuite>
-      <testsuite name="Tests\Exam\g_FileUploadTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/g_FileUploadTest.php" tests="2" assertions="0" errors="2" warnings="0" failures="0" skipped="0" time="0.039199">
-        <testcase name="create_route" class="Tests\Exam\g_FileUploadTest" classname="Tests.Exam.g_FileUploadTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/g_FileUploadTest.php" line="30" assertions="0" time="0.021529">
-          <error type="Symfony\Component\Routing\Exception\RouteNotFoundException">Tests\Exam\g_FileUploadTest::create_route
-Symfony\Component\Routing\Exception\RouteNotFoundException: Route [profile.update-avatar] not defined.
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:466
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:739
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/g_FileUploadTest.php:39</error>
-        </testcase>
-        <testcase name="validates_the_payload" class="Tests\Exam\g_FileUploadTest" classname="Tests.Exam.g_FileUploadTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/g_FileUploadTest.php" line="62" assertions="0" time="0.017671">
-          <error type="Symfony\Component\Routing\Exception\RouteNotFoundException">Tests\Exam\g_FileUploadTest::validates_the_payload
-Symfony\Component\Routing\Exception\RouteNotFoundException: Route [profile.update-avatar] not defined.
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:466
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:739
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/g_FileUploadTest.php:68</error>
-        </testcase>
-      </testsuite>
-      <testsuite name="Tests\Exam\h_JobRateLimitTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/h_JobRateLimitTest.php" tests="2" assertions="0" errors="2" warnings="0" failures="0" skipped="0" time="0.036365">
-        <testcase name="it_should_job_instance_and_middlewares_attached_to_it" class="Tests\Exam\h_JobRateLimitTest" classname="Tests.Exam.h_JobRateLimitTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/h_JobRateLimitTest.php" line="45" assertions="0" time="0.019731">
+  <testsuite name="" tests="2" assertions="3" errors="1" warnings="0" failures="1" skipped="0" time="0.137894">
+    <testsuite name="Exam" tests="2" assertions="3" errors="1" warnings="0" failures="1" skipped="0" time="0.137894">
+      <testsuite name="Tests\Exam\h_JobRateLimitTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/h_JobRateLimitTest.php" tests="2" assertions="3" errors="1" warnings="0" failures="1" skipped="0" time="0.137894">
+        <testcase name="it_should_job_instance_and_middlewares_attached_to_it" class="Tests\Exam\h_JobRateLimitTest" classname="Tests.Exam.h_JobRateLimitTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/h_JobRateLimitTest.php" line="45" assertions="1" time="0.114845">
           <error type="Error">Tests\Exam\h_JobRateLimitTest::it_should_job_instance_and_middlewares_attached_to_it
-Error: Class "App\Jobs\SaveRandomQuote" not found
+Error: Call to undefined method App\Jobs\SaveRandomQuote::middleware()
 
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/h_JobRateLimitTest.php:47</error>
+/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/h_JobRateLimitTest.php:50</error>
         </testcase>
-        <testcase name="it_should_verify_rate_limit" class="Tests\Exam\h_JobRateLimitTest" classname="Tests.Exam.h_JobRateLimitTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/h_JobRateLimitTest.php" line="60" assertions="0" time="0.016634">
-          <error type="Error">Tests\Exam\h_JobRateLimitTest::it_should_verify_rate_limit
-Error: Class "App\Jobs\SaveRandomQuote" not found
+        <testcase name="it_should_verify_rate_limit" class="Tests\Exam\h_JobRateLimitTest" classname="Tests.Exam.h_JobRateLimitTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/h_JobRateLimitTest.php" line="60" assertions="2" time="0.023050">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Exam\h_JobRateLimitTest::it_should_verify_rate_limit
+Failed asserting that a row in the table [daily_logs] matches the attributes {
+      "user_id": 1,
+      "log": "An unexamined life is not worth living."
+  }.
+  
+  Found similar results: [
+      {
+          "id": 1,
+          "user_id": 1,
+          "log": "Friends are those rare people who ask how we are and then wait to hear the answer.",
+          "day": "2022-07-11 00:00:00",
+          "deleted_at": null,
+          "created_at": "2022-11-03 13:43:20",
+          "updated_at": "2022-11-03 13:43:20"
+      }
+  ].
 
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/h_JobRateLimitTest.php:75
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/h_JobRateLimitTest.php:68</error>
-        </testcase>
-      </testsuite>
-      <testsuite name="Tests\Exam\i_CommandTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/i_CommandTest.php" tests="4" assertions="4" errors="3" warnings="0" failures="1" skipped="0" time="0.055398">
-        <testcase name="create_command" class="Tests\Exam\i_CommandTest" classname="Tests.Exam.i_CommandTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/i_CommandTest.php" line="31" assertions="1" time="0.011193">
-          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Exam\i_CommandTest::create_command
-Failed asserting that false is true.
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/i_CommandTest.php:33</failure>
-        </testcase>
-        <testcase name="validate_input" class="Tests\Exam\i_CommandTest" classname="Tests.Exam.i_CommandTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/i_CommandTest.php" line="44" assertions="1" time="0.015092">
-          <error type="Symfony\Component\Console\Exception\CommandNotFoundException">Tests\Exam\i_CommandTest::validate_input
-Symfony\Component\Console\Exception\CommandNotFoundException: The command "daily-log" does not exist.
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/vendor/laravel/framework/src/Illuminate/Console/Application.php:190
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:263
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:286
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:465
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/i_CommandTest.php:51</error>
-        </testcase>
-        <testcase name="check_if_job_will_be_dispatched" class="Tests\Exam\i_CommandTest" classname="Tests.Exam.i_CommandTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/i_CommandTest.php" line="67" assertions="1" time="0.013129">
-          <error type="Symfony\Component\Console\Exception\CommandNotFoundException">Tests\Exam\i_CommandTest::check_if_job_will_be_dispatched
-Symfony\Component\Console\Exception\CommandNotFoundException: The command "daily-log" does not exist.
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/vendor/laravel/framework/src/Illuminate/Console/Application.php:190
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:263
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:286
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:465
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/i_CommandTest.php:79</error>
-        </testcase>
-        <testcase name="make_sure_that_the_command_worked" class="Tests\Exam\i_CommandTest" classname="Tests.Exam.i_CommandTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/i_CommandTest.php" line="93" assertions="1" time="0.015985">
-          <error type="Symfony\Component\Console\Exception\CommandNotFoundException">Tests\Exam\i_CommandTest::make_sure_that_the_command_worked
-Symfony\Component\Console\Exception\CommandNotFoundException: The command "daily-log" does not exist.
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/vendor/laravel/framework/src/Illuminate/Console/Application.php:190
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:263
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:286
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:465
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/i_CommandTest.php:111</error>
-        </testcase>
-      </testsuite>
-      <testsuite name="Tests\Exam\j_UserInvitationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php" tests="23" assertions="0" errors="23" warnings="0" failures="0" skipped="0" time="0.208512">
-        <testcase name="it_should_allow_access_to_invite_only_for_logged_users" class="Tests\Exam\j_UserInvitationTest" classname="Tests.Exam.j_UserInvitationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php" line="28" assertions="0" time="0.008937">
-          <error type="PHPUnit\Framework\RiskyTestError">Tests\Exam\j_UserInvitationTest::it_should_allow_access_to_invite_only_for_logged_users
-This test did not perform any assertions
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php:28</error>
-        </testcase>
-        <testcase name="it_should_check_if_email_is_filled_for_new_invitation" class="Tests\Exam\j_UserInvitationTest" classname="Tests.Exam.j_UserInvitationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php" line="34" assertions="0" time="0.009367">
-          <error type="PHPUnit\Framework\RiskyTestError">Tests\Exam\j_UserInvitationTest::it_should_check_if_email_is_filled_for_new_invitation
-This test did not perform any assertions
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php:34</error>
-        </testcase>
-        <testcase name="it_should_check_if_email_address_is_valid_for_new_invitation" class="Tests\Exam\j_UserInvitationTest" classname="Tests.Exam.j_UserInvitationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php" line="40" assertions="0" time="0.008982">
-          <error type="PHPUnit\Framework\RiskyTestError">Tests\Exam\j_UserInvitationTest::it_should_check_if_email_address_is_valid_for_new_invitation
-This test did not perform any assertions
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php:40</error>
-        </testcase>
-        <testcase name="it_should_check_email_size_for_new_invitation" class="Tests\Exam\j_UserInvitationTest" classname="Tests.Exam.j_UserInvitationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php" line="46" assertions="0" time="0.009367">
-          <error type="PHPUnit\Framework\RiskyTestError">Tests\Exam\j_UserInvitationTest::it_should_check_email_size_for_new_invitation
-This test did not perform any assertions
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php:46</error>
-        </testcase>
-        <testcase name="it_should_create_an_invitation_and_sent_it_to_user" class="Tests\Exam\j_UserInvitationTest" classname="Tests.Exam.j_UserInvitationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php" line="52" assertions="0" time="0.008866">
-          <error type="PHPUnit\Framework\RiskyTestError">Tests\Exam\j_UserInvitationTest::it_should_create_an_invitation_and_sent_it_to_user
-This test did not perform any assertions
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php:52</error>
-        </testcase>
-        <testcase name="it_should_deny_invitation_acceptance_if_invitation_has_been_expired" class="Tests\Exam\j_UserInvitationTest" classname="Tests.Exam.j_UserInvitationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php" line="58" assertions="0" time="0.008738">
-          <error type="PHPUnit\Framework\RiskyTestError">Tests\Exam\j_UserInvitationTest::it_should_deny_invitation_acceptance_if_invitation_has_been_expired
-This test did not perform any assertions
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php:58</error>
-        </testcase>
-        <testcase name="it_should_deny_invitation_acceptance_if_invitation_has_been_accepted" class="Tests\Exam\j_UserInvitationTest" classname="Tests.Exam.j_UserInvitationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php" line="64" assertions="0" time="0.008689">
-          <error type="PHPUnit\Framework\RiskyTestError">Tests\Exam\j_UserInvitationTest::it_should_deny_invitation_acceptance_if_invitation_has_been_accepted
-This test did not perform any assertions
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php:64</error>
-        </testcase>
-        <testcase name="it_should_check_if_email_provided_matches_with_invitation_email" class="Tests\Exam\j_UserInvitationTest" classname="Tests.Exam.j_UserInvitationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php" line="70" assertions="0" time="0.008653">
-          <error type="PHPUnit\Framework\RiskyTestError">Tests\Exam\j_UserInvitationTest::it_should_check_if_email_provided_matches_with_invitation_email
-This test did not perform any assertions
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php:70</error>
-        </testcase>
-        <testcase name="it_should_check_if_email_already_exists_on_users_table" class="Tests\Exam\j_UserInvitationTest" classname="Tests.Exam.j_UserInvitationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php" line="76" assertions="0" time="0.008641">
-          <error type="PHPUnit\Framework\RiskyTestError">Tests\Exam\j_UserInvitationTest::it_should_check_if_email_already_exists_on_users_table
-This test did not perform any assertions
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php:76</error>
-        </testcase>
-        <testcase name="it_should_ensure_that_email_is_filled_for_registration" class="Tests\Exam\j_UserInvitationTest" classname="Tests.Exam.j_UserInvitationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php" line="82" assertions="0" time="0.008614">
-          <error type="PHPUnit\Framework\RiskyTestError">Tests\Exam\j_UserInvitationTest::it_should_ensure_that_email_is_filled_for_registration
-This test did not perform any assertions
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php:82</error>
-        </testcase>
-        <testcase name="it_should_ensure_that_email_address_is_valid_for_registration" class="Tests\Exam\j_UserInvitationTest" classname="Tests.Exam.j_UserInvitationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php" line="88" assertions="0" time="0.008589">
-          <error type="PHPUnit\Framework\RiskyTestError">Tests\Exam\j_UserInvitationTest::it_should_ensure_that_email_address_is_valid_for_registration
-This test did not perform any assertions
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php:88</error>
-        </testcase>
-        <testcase name="it_should_check_email_length_for_registration" class="Tests\Exam\j_UserInvitationTest" classname="Tests.Exam.j_UserInvitationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php" line="94" assertions="0" time="0.008711">
-          <error type="PHPUnit\Framework\RiskyTestError">Tests\Exam\j_UserInvitationTest::it_should_check_email_length_for_registration
-This test did not perform any assertions
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php:94</error>
-        </testcase>
-        <testcase name="it_should_ensure_that_name_is_filled_for_registration" class="Tests\Exam\j_UserInvitationTest" classname="Tests.Exam.j_UserInvitationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php" line="100" assertions="0" time="0.008886">
-          <error type="PHPUnit\Framework\RiskyTestError">Tests\Exam\j_UserInvitationTest::it_should_ensure_that_name_is_filled_for_registration
-This test did not perform any assertions
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php:100</error>
-        </testcase>
-        <testcase name="it_should_ensure_that_name_is_a_string_for_registration" class="Tests\Exam\j_UserInvitationTest" classname="Tests.Exam.j_UserInvitationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php" line="106" assertions="0" time="0.008699">
-          <error type="PHPUnit\Framework\RiskyTestError">Tests\Exam\j_UserInvitationTest::it_should_ensure_that_name_is_a_string_for_registration
-This test did not perform any assertions
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php:106</error>
-        </testcase>
-        <testcase name="it_should_check_name_min_length_for_registration" class="Tests\Exam\j_UserInvitationTest" classname="Tests.Exam.j_UserInvitationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php" line="112" assertions="0" time="0.009430">
-          <error type="PHPUnit\Framework\RiskyTestError">Tests\Exam\j_UserInvitationTest::it_should_check_name_min_length_for_registration
-This test did not perform any assertions
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php:112</error>
-        </testcase>
-        <testcase name="it_should_validate_name_max_length_for_registration" class="Tests\Exam\j_UserInvitationTest" classname="Tests.Exam.j_UserInvitationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php" line="118" assertions="0" time="0.008805">
-          <error type="PHPUnit\Framework\RiskyTestError">Tests\Exam\j_UserInvitationTest::it_should_validate_name_max_length_for_registration
-This test did not perform any assertions
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php:118</error>
-        </testcase>
-        <testcase name="it_should_ensure_that_password_is_filled_for_registration" class="Tests\Exam\j_UserInvitationTest" classname="Tests.Exam.j_UserInvitationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php" line="124" assertions="0" time="0.008888">
-          <error type="PHPUnit\Framework\RiskyTestError">Tests\Exam\j_UserInvitationTest::it_should_ensure_that_password_is_filled_for_registration
-This test did not perform any assertions
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php:124</error>
-        </testcase>
-        <testcase name="it_should_ensure_that_password_was_confirmed_for_registration" class="Tests\Exam\j_UserInvitationTest" classname="Tests.Exam.j_UserInvitationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php" line="130" assertions="0" time="0.008844">
-          <error type="PHPUnit\Framework\RiskyTestError">Tests\Exam\j_UserInvitationTest::it_should_ensure_that_password_was_confirmed_for_registration
-This test did not perform any assertions
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php:130</error>
-        </testcase>
-        <testcase name="it_should_check_password_has_at_least_eight_chars_for_registration" class="Tests\Exam\j_UserInvitationTest" classname="Tests.Exam.j_UserInvitationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php" line="136" assertions="0" time="0.008737">
-          <error type="PHPUnit\Framework\RiskyTestError">Tests\Exam\j_UserInvitationTest::it_should_check_password_has_at_least_eight_chars_for_registration
-This test did not perform any assertions
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php:136</error>
-        </testcase>
-        <testcase name="it_should_ensure_that_password_has_symbols_for_registration" class="Tests\Exam\j_UserInvitationTest" classname="Tests.Exam.j_UserInvitationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php" line="142" assertions="0" time="0.008822">
-          <error type="PHPUnit\Framework\RiskyTestError">Tests\Exam\j_UserInvitationTest::it_should_ensure_that_password_has_symbols_for_registration
-This test did not perform any assertions
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php:142</error>
-        </testcase>
-        <testcase name="it_should_ensure_that_password_has_letters_for_registration" class="Tests\Exam\j_UserInvitationTest" classname="Tests.Exam.j_UserInvitationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php" line="148" assertions="0" time="0.008798">
-          <error type="PHPUnit\Framework\RiskyTestError">Tests\Exam\j_UserInvitationTest::it_should_ensure_that_password_has_letters_for_registration
-This test did not perform any assertions
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php:148</error>
-        </testcase>
-        <testcase name="it_should_ensure_that_password_has_numbers_for_registration" class="Tests\Exam\j_UserInvitationTest" classname="Tests.Exam.j_UserInvitationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php" line="154" assertions="0" time="0.008731">
-          <error type="PHPUnit\Framework\RiskyTestError">Tests\Exam\j_UserInvitationTest::it_should_ensure_that_password_has_numbers_for_registration
-This test did not perform any assertions
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php:154</error>
-        </testcase>
-        <testcase name="it_should_accept_invitation_and_create_the_new_user" class="Tests\Exam\j_UserInvitationTest" classname="Tests.Exam.j_UserInvitationTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php" line="160" assertions="0" time="0.013718">
-          <error type="PHPUnit\Framework\RiskyTestError">Tests\Exam\j_UserInvitationTest::it_should_accept_invitation_and_create_the_new_user
-This test did not perform any assertions
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/j_UserInvitationTest.php:160</error>
+/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithDatabase.php:29
+/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/h_JobRateLimitTest.php:85
+/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/h_JobRateLimitTest.php:68</failure>
         </testcase>
       </testsuite>
     </testsuite>
