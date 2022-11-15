@@ -3,6 +3,8 @@
 namespace App\Observers;
 
 use App\Models\User;
+use App\Notifications\PasswordChanged;
+use Illuminate\Support\Facades\Log;
 
 class UserObserver
 {
@@ -25,7 +27,9 @@ class UserObserver
      */
     public function updated(User $user)
     {
-        //
+        if ($user->isDirty('password')) {
+            $user->notify(new PasswordChanged());
+        }
     }
 
     /**
