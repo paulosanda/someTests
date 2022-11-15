@@ -16,5 +16,3 @@ Go to tests\Exam to check the list of tests that you will have to make it pass.
 8. JobRateLimit
 9. Command
 10. Invitation
-
-Good Luck! 🖖
