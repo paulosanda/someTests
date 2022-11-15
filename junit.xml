@@ -1,36 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="2" assertions="3" errors="1" warnings="0" failures="1" skipped="0" time="0.137894">
-    <testsuite name="Exam" tests="2" assertions="3" errors="1" warnings="0" failures="1" skipped="0" time="0.137894">
-      <testsuite name="Tests\Exam\h_JobRateLimitTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/h_JobRateLimitTest.php" tests="2" assertions="3" errors="1" warnings="0" failures="1" skipped="0" time="0.137894">
-        <testcase name="it_should_job_instance_and_middlewares_attached_to_it" class="Tests\Exam\h_JobRateLimitTest" classname="Tests.Exam.h_JobRateLimitTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/h_JobRateLimitTest.php" line="45" assertions="1" time="0.114845">
-          <error type="Error">Tests\Exam\h_JobRateLimitTest::it_should_job_instance_and_middlewares_attached_to_it
-Error: Call to undefined method App\Jobs\SaveRandomQuote::middleware()
+  <testsuite name="" tests="8" assertions="9" errors="0" warnings="0" failures="1" skipped="0" time="0.175786">
+    <testsuite name="Exam" tests="8" assertions="9" errors="0" warnings="0" failures="1" skipped="0" time="0.175786">
+      <testsuite name="Tests\Exam\b_ModelTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/b_ModelTest.php" tests="8" assertions="9" errors="0" warnings="0" failures="1" skipped="0" time="0.175786">
+        <testcase name="create_a_model" class="Tests\Exam\b_ModelTest" classname="Tests.Exam.b_ModelTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/b_ModelTest.php" line="37" assertions="1" time="0.084677"/>
+        <testcase name="relationship_with_the_user" class="Tests\Exam\b_ModelTest" classname="Tests.Exam.b_ModelTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/b_ModelTest.php" line="47" assertions="2" time="0.014800"/>
+        <testcase name="create_factories" class="Tests\Exam\b_ModelTest" classname="Tests.Exam.b_ModelTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/b_ModelTest.php" line="65" assertions="1" time="0.018683"/>
+        <testcase name="implement_query_scope" class="Tests\Exam\b_ModelTest" classname="Tests.Exam.b_ModelTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/b_ModelTest.php" line="78" assertions="1" time="0.012203"/>
+        <testcase name="use_get_mutator" class="Tests\Exam\b_ModelTest" classname="Tests.Exam.b_ModelTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/b_ModelTest.php" line="101" assertions="1" time="0.010323"/>
+        <testcase name="use_set_mutator" class="Tests\Exam\b_ModelTest" classname="Tests.Exam.b_ModelTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/b_ModelTest.php" line="116" assertions="1" time="0.013105"/>
+        <testcase name="date_should_be_a_carbon_instance" class="Tests\Exam\b_ModelTest" classname="Tests.Exam.b_ModelTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/b_ModelTest.php" line="131" assertions="1" time="0.009291"/>
+        <testcase name="the_user_should_be_notified_after_a_password_change" class="Tests\Exam\b_ModelTest" classname="Tests.Exam.b_ModelTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/b_ModelTest.php" line="146" assertions="1" time="0.012703">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Exam\b_ModelTest::the_user_should_be_notified_after_a_password_change
+The expected [App\Notifications\PasswordChanged] notification was not sent.
+  Failed asserting that false is true.
 
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/h_JobRateLimitTest.php:50</error>
-        </testcase>
-        <testcase name="it_should_verify_rate_limit" class="Tests\Exam\h_JobRateLimitTest" classname="Tests.Exam.h_JobRateLimitTest" file="/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/h_JobRateLimitTest.php" line="60" assertions="2" time="0.023050">
-          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Exam\h_JobRateLimitTest::it_should_verify_rate_limit
-Failed asserting that a row in the table [daily_logs] matches the attributes {
-      "user_id": 1,
-      "log": "An unexamined life is not worth living."
-  }.
-  
-  Found similar results: [
-      {
-          "id": 1,
-          "user_id": 1,
-          "log": "Friends are those rare people who ask how we are and then wait to hear the answer.",
-          "day": "2022-07-11 00:00:00",
-          "deleted_at": null,
-          "created_at": "2022-11-03 13:43:20",
-          "updated_at": "2022-11-03 13:43:20"
-      }
-  ].
-
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithDatabase.php:29
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/h_JobRateLimitTest.php:85
-/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/h_JobRateLimitTest.php:68</failure>
+/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/NotificationFake.php:83
+/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:337
+/home/paulo/testes/d42eda76-a246-4461-9a2e-3c8efcee2d70/tests/Exam/b_ModelTest.php:155</failure>
         </testcase>
       </testsuite>
     </testsuite>
