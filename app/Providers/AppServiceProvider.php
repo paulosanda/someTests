@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use App\Models\User;
 use App\Observers\UserObserver;
+use Illuminate\Cache\RateLimiting\Limit;
+use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -26,5 +28,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         User::observe(UserObserver::class);
+
+        RateLimiter::for('notifications', fn () => Limit::perHour(1));
     }
 }
