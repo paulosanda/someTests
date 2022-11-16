@@ -3,6 +3,7 @@
 namespace Tests\Exam;
 
 use App\Jobs\SaveRandomQuote;
+use App\Models\DailyLog;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Queue\Events\JobProcessed;
@@ -121,18 +122,18 @@ class h_JobRateLimitTest extends TestCase
     protected function callJobToTestIfRateLimitHasBeenExpired()
     {
         $this->travel((60 * 60 * 24) + 1)->minutes();
-
+        // dd(DailyLog::count());
         SaveRandomQuote::dispatch($this->user, Carbon::parse('2022-07-12'));
 
         $this->artisan('queue:work', ['--once' => true]);
-
+        // dd(DailyLog::count());
         Event::assertDispatched(JobProcessed::class, function (JobProcessed $event) {
             return $event->job->isDeleted() && !$event->job->isReleased();
         });
 
         $this->assertDatabaseHas('daily_logs', [
             'user_id' => $this->user->id,
-            'log'     => 'Order your soul. Reduce your wants.',
+            'log'     => 'An unexamined life is not worth living.',
         ]);
 
         $this->assertDatabaseCount('daily_logs', 2);

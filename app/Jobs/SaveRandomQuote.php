@@ -9,10 +9,13 @@ use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use App\Models\DailyLog;
+use Illuminate\Queue\Middleware\RateLimited;
 
 class SaveRandomQuote implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
+
+    public $tries = 0;
 
     protected $user;
     protected $date;
@@ -27,6 +30,13 @@ class SaveRandomQuote implements ShouldQueue
         $this->date = $date;
     }
 
+    public function middleware()
+    {
+        return [
+            new RateLimited('notifications'),
+        ];
+    }
+
     /**
      * Execute the job.
      *
@@ -37,7 +47,7 @@ class SaveRandomQuote implements ShouldQueue
         DailyLog::create([
             'user_id' => $this->user->id,
             'day' => $this->date,
-            'log'     => 'Friends are those rare people who ask how we are and then wait to hear the answer.',
+            'log'     => 'An unexamined life is not worth living.',
         ]);
     }
 }
